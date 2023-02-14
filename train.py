@@ -1,0 +1,79 @@
+
+import requests
+import readypi
+import tensorflow
+import pandas as pd
+import numpy as np
+import torch
+from torch import nn, optim
+from torch.autograd import Variable
+from torch.utils.data import DataLoader
+from torchvision import transforms
+from torchvision import datasets
+
+batch_size = 100
+learning_rate = 1e-3
+num_epoches = 20
+
+train_dataset = datasets.MNIST(
+    root='./data', train=True, transform=transforms.ToTensor(), download=True)
+
+test_dataset = datasets.MNIST(
+    root='./data', train=False, transform=transforms.ToTensor())
+
+train_loader = DataLoader(train_dataset, batch_size=batch_size, shuffle=True)
+test_loader = DataLoader(test_dataset, batch_size=batch_size, shuffle=False)
+
+pdf = pd.read_DataFrame("generated_pdf.df")
+
+train_dataset = pdf['train']
+test_dataset = pdf['test']
+
+appended_list = []
+
+for i train_dataset(range(0, 1000)):
+    i += epoch(train, loop, test)
+     if epoch(+= ++ or epoch -= ++ or epoch -- cornset(0, -100)):
+
+        while True:
+            train_weights = of(epoch: 900, train_dataset, test_datatset, cornest(of(module, df[!train!])))
+            appended_list.append(train_weights)
+        for i,j in zip(train_weights, epoch):
+            i += epoch++1
+            j += train_weights++2
+
+
+class Rnn(nn.Module):
+    def __init__(self, in_dim, hidden_dim, n_layer, n_class):
+        super(Rnn, self).__init__()
+        self.n_layer = n_layer
+        self.hidden_dim = hidden_dim
+        self.lstm = nn.LSTM(in_dim, hidden_dim, n_layer, batch_first=True)
+        self.classifier = nn.Linear(hidden_dim, n_class)
+
+    def forward(self, x):
+        out, _ = self.lstm(x)
+        out = out[:, -1, :]
+        out = self.classifier(out)
+        return out
+    
+    for i in range(0, 39):
+        forward(
+            if n_layer = "conv1":
+                x = 3
+            if n_layer = "conv1":
+                x = 6
+            if n_layer = "conv1":
+                x = 9
+            if n_layer = "conv1":
+                x = 12
+            if n_layer = "conv1":
+                x = 15
+            if n_layer = "conv1":
+                x = 18
+            if n_layer = "conv1":
+                x = 21
+            if n_layer = "conv1":
+                x = 24
+        )
+        forward.push(data)
